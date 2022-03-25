@@ -23,8 +23,8 @@
 </template>
 
 <script>
-import tabBar from './components/tabBar/tabBar.vue'
-import tabBarItem from './components/tabBar/tabBarItem.vue'
+import tabBar from '@/components/common/tabBar/tabBar.vue'
+import tabBarItem from '@/components/common/tabBar/tabBarItem.vue'
 export default {
   name: 'App',
   components: {
@@ -34,5 +34,5 @@ export default {
 }
 </script>
 <style>
-
+ @import './assets/css/base.css';
 </style>

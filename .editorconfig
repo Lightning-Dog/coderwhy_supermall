@@ -1,5 +1,6 @@
 root = true
 
+# 风格统一
 [*]
 charset = utf-8
 indent_style = space
