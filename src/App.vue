@@ -1,35 +1,19 @@
 <template>
-  <div id="app">
-    <tabBar>
-          <tabBarItem>
-            <img src="./assets/img/主页.png" slot='itemIcon'>
-            <div slot='itemText'>首页</div>
-          </tabBarItem>
-          <tabBarItem>
-            <img src="./assets/img/主页.png" slot='itemIcon'>
-            <div slot='itemText'>首页</div>
-          </tabBarItem>
-          <tabBarItem>
-            <img src="./assets/img/主页.png" slot='itemIcon'>
-            <div slot='itemText'>首页</div>
-          </tabBarItem>
-          <tabBarItem>
-            <img src="./assets/img/主页.png" slot='itemIcon'>
-            <div slot='itemText'>首页</div>
-          </tabBarItem>
-    </tabBar>
+  <div id="app" style="height:100%">
+    <keep-alive exclude="detail">
+      <router-view/>
+    </keep-alive>
+    <MainTabBar/>
     <!-- <router-view/> -->
   </div>
 </template>
 
 <script>
-import tabBar from '@/components/common/tabBar/tabBar.vue'
-import tabBarItem from '@/components/common/tabBar/tabBarItem.vue'
+import MainTabBar from './components/content/MainTabBar.vue'
 export default {
   name: 'App',
   components: {
-    tabBar,
-    tabBarItem
+    MainTabBar
   }
 }
 </script>
